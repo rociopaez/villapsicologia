@@ -1,0 +1,290 @@
+---
+---
+
+$dark-green: rgb(51, 79, 93);
+$light-green: rgb(119, 191, 190);
+$super-light-gray: rgb(240, 240, 240);
+$white: white;
+$yellow: rgb(253, 255, 77);
+$orange: rgb(233, 139, 105);
+$pink: rgb(224, 119, 113);
+$sans-serif: 'Quicksand', sans-serif;
+
+body {
+  background-color: $white;
+  margin: 0;
+  padding: 0 0 44px;
+  font-family: $sans-serif;
+  color: $dark-green;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+a:link, a:visited {
+  color: $orange;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 44px;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+ul, ol, li {
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+  line-height: 22px;
+}
+
+main, header, nav, footer {
+ clear: both;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-color: $dark-green;
+  text-align: center;
+  height: 44px;
+  color: $super-light-gray;
+
+  ul {
+    padding: 11px;
+
+    li {
+      list-style: none;
+      display: inline;
+
+      a:link, a:visited {
+        -webkit-font-smoothing: antialiased;
+        display: inline-block;
+        color: $white;
+        padding: 0 11px;
+      }
+    }
+  }
+}
+
+ul, ol {
+  padding-left: 22px;
+}
+
+ol li {
+  margin-bottom: 22px;
+}
+
+li ul {
+  margin: 11px 22px;
+}
+
+.logo {
+  margin: 0;
+  padding: 0;
+  background-color: $white;
+
+  img {
+    margin: 0 auto;
+    display: block;
+    height: 220px;
+  }
+}
+
+.main-nav {
+  margin: 0;
+  padding: 11px 0;
+  background-color: $dark-green;
+
+  ul {
+    padding: 12px;
+    height: 24px;
+  }
+
+  li {
+    list-style: none;
+    float: left;
+    width: 25%;
+    font-size: 22px;
+    text-align: center;
+
+    &.talleres {
+      a:link, a:visited {
+        color: $light-green;
+      }
+    }
+
+    &.enfoque {
+      a:link, a:visited {
+        color: $orange;
+      }
+    }
+
+    &.quienes_somos {
+      a:link, a:visited {
+        color: $yellow;
+      }
+    }
+
+    &.contacto {
+      a:link, a:visited {
+        color: $pink;
+      }
+    }
+
+    a:link, a:visited {
+      font-weight: 500;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+  }
+}
+
+.taller {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 50%;
+  padding: 44px;
+  float: left;
+  line-height: 22px;
+  font-size: 16px;
+}
+
+.enfoque {
+  figure {
+    img {
+      float: right;
+    }
+
+    figcaption {
+      float: left;
+      width: 440px;
+    }
+  }
+
+  article {
+    clear: both;
+    margin: 22px auto;
+    padding: 44px;
+
+    &.temas {
+      background: asset-url('marco-con-nios.jpg') right bottom no-repeat;
+      padding-left: 220px;
+
+      p, ul {
+        width: 800px;
+      }
+    }
+  }
+}
+
+.quienes_somos {
+  article {
+    width: 800px;
+    margin: 44px auto;
+  }
+}
+
+.contacto-info {
+  box-sizing: border-box;
+  width: 50%;
+  float: left;
+  padding: 44px;
+}
+
+.formulario-contacto {
+  box-sizing: border-box;
+  width: 50%;
+  float: left;
+  padding: 44px;
+  float: right;
+  padding: 44px  88px;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+label {
+  display: block;
+  padding: 11px 0;
+}
+
+input[type="text"], input[type="email"], textarea {
+  width: 75%;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+  border: 2px solid $dark-green;
+  font-family: $sans-serif;
+  font-size: 16px;
+  padding: 11px;
+}
+
+textarea {
+  width: 100%;
+  font-size: 14px;
+}
+
+input[type="submit"] {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+  border: 2px solid $dark-green;
+  background-color: $dark-green;
+  color: $white;
+  font-family: $sans-serif;
+  padding: 4px 11px;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.logo_socializarte {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.mapa {
+  width: 30%;
+  margin: 0 auto;
+  padding-left: 44px;
+}
+
+.info
+  h1 {
+    font-size: 28px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  h3 {
+    font-size: 16px;
+  }
+
+.flash-alert,
+.flash-notice {
+  color: $pink;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+}
