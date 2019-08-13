@@ -100,8 +100,6 @@ li ul {
       color: #fdff4d; }
     .main-nav li.contacto a:link, .main-nav li.contacto a:visited {
       color: #e07771; }
-    .main-nav li.blog a:link, .main-nav li.contacto a:visited {
-      color: red; }
     .main-nav li a:link, .main-nav li a:visited {
       font-weight: 500;
       text-decoration: none;
